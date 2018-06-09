@@ -23,5 +23,5 @@ spring:
 logging:
     path: logs/
     file: api.log
-    level:
+    level: # 这里可以按照包名配置不同的日志级别.
         com.ygbinac: debug
