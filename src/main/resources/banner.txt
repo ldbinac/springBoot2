@@ -1,4 +1,4 @@
 ====================================================================================================================
-                    欢迎使用 - Powered By ygbinac@gmail.com
-                    spring boot2 demo
+                    欢迎使用 ${application.title} ${application.formatted-version} - Powered By ygbinac@gmail.com
+                    Spring Boot ${spring-boot.formatted-version}
 ====================================================================================================================
