@@ -1,0 +1,27 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 8081
+    context-path: /springboot2
+
+# mysql
+spring:
+    # 环境 dev|test|prod
+    profiles:
+        active: dev
+    jpa:
+      show-sql: true
+      properties:
+                hibernate:
+                    hbm2ddl:
+                        auto: update
+                    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#日志信息配置.
+logging:
+    path: logs/
+    file: api.log
+    level:
+        com.ygbinac: debug
